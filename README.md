@@ -7,7 +7,12 @@ Within this project:
 
 
 I used SQL for data modeling, ETL, and data aggregation
+
+
 I used PowerBI for Data Visualization and analysis
-I used R Programming for more advanced data manipulation, data transformation, and predictive modeling/analytics 
+
+
+I used R Programming for more advanced data manipulation, data transformation, and predictive modeling/analytics
+
 
 The overall goal - to provide descriptive and predictive analytics to provide recommendations for business change - was achieved and presented via PowerPoint 
