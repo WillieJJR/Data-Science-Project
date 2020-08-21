@@ -24,6 +24,7 @@ forecast.proto$`Stock Item Key` <- NULL
 
 
 ###### Time Series Forecast Modeling ######
+##Comparing each models summary statistics to discern which is best
 library(fpp2)
 
 #declare ts variable 
@@ -52,8 +53,8 @@ checkresiduals(fit_arima)
 
 
 #####Time Series Predictions#####
-frcst <- forecast(fit_arima, h = 24)
-autoplot(frcst, include = 12)+
+frcst <- forecast(fit_arima, h = 24) #forecast 24 months out
+autoplot(frcst, include = 12)+ #plot the forecast predicitions
   ylab("Total Quantity Sold")+
   theme_classic()
-print(summary(frcst)) 
+print(summary(frcst)) #summary statistics for forecasting predictions
