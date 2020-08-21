@@ -1,6 +1,6 @@
 # Data-Science-Project
 
-This project uses the World Wide Imports (WWI) DataWarehouse. The goal is to ETL, Explore, Analyze, and Predict, using Data Analytics/Science tools, to derive insights that will lead to decisions that can enhance the future-state of the business. 
+This project uses the World Wide Imports (WWI) DataWarehouse. The goal is to perform ETL, Explore, Analyze, and Predict, using Data Analytics/Science tools, to derive insights that will lead to decisions that can enhance the future-state of the business. 
 
 Within this project:
 I used SQL for data modeling, ETL, and data aggregation
