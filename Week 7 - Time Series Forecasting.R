@@ -106,13 +106,3 @@ checkresiduals(fit_arima)
 frcst <- forecast(fit_arima, h = 1)
 autoplot(frcst, include = 6)
 print(summary(frcst)) 
-#item 29 has a forecasted lo (95) - 1897.16 and a hi (95) 6737.67
-#item 28 has a forecasted lo (95) - 2681.492 and a hi (95) 7817.389
-#item 31 has a forecasted lo (95) - 558.25 and a hi (95) 5016.97
-#item 32 has a forecasted lo (95) - 1276.03 and a hi (95) 5878.47
-#item 35 has a forecasted lo (95) - 4874.66 and a hi (95) 8620.45
-#item 33 has a forecasted lo (95) - 1541.20 and a hi (95) 6347.18
-#item 22 has a forecasted lo (95) - 490.27 and a hi (95) 6165.01
-#item 43 has a forecasted lo (95) - 1770.20 and a hi (95) 6383.91
-#item 21 has a forecasted lo (95) - 2425.047 and a hi (95) 6446.508
-#item 41 has a forecasted lo (95) - 2781.84 and a hi (95) 6823.19
