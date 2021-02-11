@@ -55,46 +55,6 @@ ui <- shinyUI(fluidPage(
           mainPanel(
                     column(9, plotOutput("Forecasting_Plot", width="800px",height="400px")),
                     column(9, DT::dataTableOutput("forecast_pred")))
-          
-          
-          
-          #ui <- dashboardPage(
-            #dashboardHeader(title = "Forecasting Items Dashboard"),
-            #dashboardSidebar(
-             # sidebarMenu(
-                #menuItem("Descriptive Analytics",
-                        # tabName = "descriptive_analytics",
-                         #icon = icon("dashboard")),
-                #menuItem("Predictive Analytics",
-                      #   tabName = "predictive_analytics",
-                       #  icon = icon("dashboard"))
-             # )
-          #  ),
-           # dashboardBody(
-            #  tabItems(
-             #   tabItem(tabName = "predictive_analytics",
-              #          fluidPage(box(selectInput(inputId = "k_stock_item",
-               #                                   label = "Stock Item Number",
-                #                                  choices = forecast.data$`Stock Item Key`)),
-                 #                 box(sliderInput(inputId = "length_forecast",
-                  #                                label = "Select length to Forecast",
-                   #                               min = 1,
-                    #                              max = 36,
-                     #                             value = 12)),
-                      #            box(sliderInput(inputId = "previous_months",
-                       #                           label = "Select previous Months to Include",
-                        #                          min = 6,
-                         #                         max = 24,
-                          #                        value = 12))),
-                        #box(plotOutput("Forecasting_Plot", )),
-                        #box(tableOutput("forecast_pred"))),
-                #tabItem(tabName = "descriptive_analytics"))
-            #)
-            
-            
-          #)
-          
-          #)
   ))
 )                              
 
