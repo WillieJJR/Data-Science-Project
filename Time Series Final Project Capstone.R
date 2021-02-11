@@ -14,45 +14,33 @@ forecast.proto <- forecast.proto[
 #removing to create Time Series data
 forecast.proto$`Stock Item` <- NULL
 forecast.proto$`Stock Item Key` <- NULL
-####################
-###################
 
 
-
-
-
-
-
-###### Time Series Forecast Modeling ######
-##Comparing each models summary statistics to discern which is best
+#Time Series Forecast Modeling 
+#Comparing each models summary statistics to discern which is best
 library(fpp2)
 
 #declare ts variable 
 y <- ts(forecast.proto[,1], start = c(2013,1), frequency = 12)
 DY <- diff(y)
 
-fit <- snaive(DY) #Naive model
+#Naive model
+fit <- snaive(DY) 
 print(summary(fit))
 checkresiduals(fit)
 
-####fit ets method 
-fit_ets <- ets(y) #Exponential Smoothing model
+#fit ets method 
+fit_ets <- ets(y) 
 print(summary(fit_ets))
 checkresiduals(fit_ets)
 
-####fit ARIMA 
-fit_arima <- auto.arima(y, d=1, D=1, stepwise = F, approximation = F, trace = TRUE) #ARIMA model
+#fit ARIMA 
+fit_arima <- auto.arima(y, d=1, D=1, stepwise = F, approximation = F, trace = TRUE) 
 print(summary(fit_arima))
 checkresiduals(fit_arima)
 
 
-
-
-
-
-
-
-#####Time Series Predictions#####
+#Time Series Predictions - ARIMA 
 frcst <- forecast(fit_arima, h = 24) #forecast 24 months out
 autoplot(frcst, include = 12)+ #plot the forecast predicitions
   ylab("Total Quantity Sold")+
