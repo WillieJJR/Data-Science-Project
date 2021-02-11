@@ -1,4 +1,4 @@
-# Data-Science-Project
+# Time Series Modeling/Forecasting Project
 
 This project uses the World Wide Imports (WWI) DataWarehouse. The goal is to perform ETL, Explore, Analyze, and Predict, using Data Analytics/Science tools, to derive insights that will lead to decisions that can enhance the future-state of the business. 
 
